@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0f172a;
+  --color-line: #e2e8f0;
+  --color-canvas: #f8fafc;
+  --color-pro: #2563eb;
+  --color-con: #dc2626;
+  --color-gold: #d97706;
+  --color-violet: #7c3aed;
+}
+
+html {
+  background: #ffffff;
+}
+
+body {
+  @apply bg-white text-ink antialiased text-base leading-relaxed;
+  font-family: var(--font-sans);
+}
+
+.frame-champion {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #d97706;
+  border-radius: 9999px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
